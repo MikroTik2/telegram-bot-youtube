@@ -21,7 +21,7 @@ textComposer.on("text", async (ctx) => {
 
         await ctx.reply(code(`Сообщение принял. Жду ответа от сервера...`));
         await ctx.replyWithVideo({ source: filePath });
-        await ctx.reply(`Ваше видео: ${videoInfo.videoDetails.title}`);
+        await ctx.reply(`Ваше видео: ${videoInfo.videoDetails.title}`); 
 
     } catch (error) {
         await ctx.reply(code(`Извините у нас какие-то ошибки попробуйте позже`));
